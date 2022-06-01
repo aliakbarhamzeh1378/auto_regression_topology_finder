@@ -1,0 +1,25 @@
+{
+  "dataset": {
+    "train": "/dataset/auto-mpg.txt",
+    "test": "/dataset/auto-mpg.txt",
+    "validation": "/dataset/auto-mpg.txt",
+    "divisions": "60,20,20",
+    "inputs": "Horsepower,Weight,Acceleration,Model Year",
+    "outputs": "MPG,Cylinders,Displacement",
+    "seperator": ","
+  },
+  "model": {
+    "max_layer": 4,
+    "max_neurons": 10,
+    "batch_size": 100,
+    "epoch": 1000,
+    "lr": 0.003,
+    "loss": "mean_absolute_error"
+  },
+  "save_path": {
+    "monogo_connection": "mongodb://localhost:27017",
+    "project_name": "t2",
+    "temp": "./tmp",
+    "main": "./main"
+  }
+}
